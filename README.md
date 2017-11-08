@@ -16,7 +16,7 @@ list.populate(fruits, fruitItemStructure);
 Namely an array of our fruits and an array that represents the general structure of each list item. Here's the array of fruits.
 ```
 var fruits = [
-	{ name : "Apple", calories : 95 },
+  { name : "Apple", calories : 95 },
   { name : "Banana", calories : 105 },
   { name : "Orange", calories : 45 }
 ];
