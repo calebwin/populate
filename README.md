@@ -32,3 +32,32 @@ Each item in the list will contain some HTML elements that need to be created. T
 1. `tag` - The tag of the HTML element
 2. `properties` - An array of the properties of the tag (e.g. - id, class, width, height, href); each of the objects in this array have 2 properties - `attr` - the attribute of the HTML element and `val` - the value of the attribute of the HTML element
 3. val - The text to be attatched to the HTML element; empty if you don't want any text
+
+And lastly - all you have to do is call the populate function!
+```
+var list = document.getElementById("list");
+list.populate(fruits, fruitItemStructure);
+```
+So putting all of that together, here's the full code sample -
+```
+var list = document.getElementById("list");
+var fruits = [
+	{ name : "Apple", calories : 95 },
+  { name : "Banana", calories : 105 },
+  { name : "Orange", calories : 45 }
+];
+var tropicalFruits = [
+	{ name : "Pineapple", calories : 452 },
+  { name : "Mango", calories : 201 }
+];
+var fruitItemStructure = [
+	{tag:"h3", properties : [{attr : "class", val : "header"}], val : "name"},
+	{tag:"h4", properties : [{attr : "class", val : "header"}], val : "calories"}
+];
+list.populate(fruits, fruitItemStructure);
+list.populate(tropicalFruits, fruitItemStructure);
+```
+I have 2 data-sets to demonstrate the behind-the-scenes element recycling that takes place.
+
+## Getting Started
+To get started, you can either clone this repository or you can just copy the code (it's actually very short). Feel free to use this for non-commercial or commercial use with or without credit. I am continuing to develop and optimize populate.js and hope to increase its efficiancy and usefulness.
