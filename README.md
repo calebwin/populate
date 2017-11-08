@@ -59,5 +59,4 @@ list.populate(tropicalFruits, fruitItemStructure);
 ```
 I have 2 data-sets to demonstrate the behind-the-scenes element recycling that takes place.
 
-## Getting Started
-To get started, you can either clone this repository or you can just copy the code (it's actually very short). Feel free to use this for non-commercial or commercial use with or without credit. I am continuing to develop and optimize populate.js and hope to increase its efficiancy and usefulness.
+Feel free to use this for non-commercial or commercial use with or without credit. I am continuing to develop and optimize populate.js and hope to increase its efficiancy and usefulness.
