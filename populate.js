@@ -22,7 +22,7 @@ Element.prototype.populate = function(array, item) {
          }
       }
       for(var k = 0; k < item[j].properties.length; k++) {
-      	liComponent.setAttribute(item[j].properties[k].attr, item[j].properties[k].val)
+      	liComponent.setAttribute(item[j].properties[k].attr,item[j].properties[k].val);
       }
       if(newComponentNeeded) {
       	li.appendChild(liComponent);
@@ -31,5 +31,8 @@ Element.prototype.populate = function(array, item) {
     if(newElementNeeded) {
     	this.appendChild(li);
     }
+  }
+  while(this.children.length>array.length) {
+  	this.removeChild(this.children[this.children.length-1]);
   }
 }
