@@ -42,7 +42,7 @@ So putting all of that together, here's the full code sample -
 ```
 var list = document.getElementById("list");
 var fruits = [
-	{ name : "Apple", calories : 95 },
+  { name : "Apple", calories : 95 },
   { name : "Banana", calories : 105 },
   { name : "Orange", calories : 45 }
 ];
