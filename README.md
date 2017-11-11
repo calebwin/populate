@@ -61,7 +61,7 @@ I have 2 data-sets to demonstrate the behind-the-scenes element recycling that t
 
 Feel free to use this for non-commercial or commercial use with or without credit. I am continuing to develop and optimize populate.js and hope to increase its efficiancy and usefulness.
 
-TODO
+## TODO
 - Append changed nodes to a document fragment; then, append the fragment to the document
 - Store pointer references to nodes
 - Pre-determine the length of arrays of children of nodes before traversing
