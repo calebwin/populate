@@ -1,4 +1,4 @@
-# populate
+## What it is
 populate is a simple JavaScript function for easily populating HTML lists. All you have to do is provide the data for the list and the general structure of each list item. Then you can simply call the populate function and your list will be populated with the data recycling elements already in the list and generating new ones only if necessary. No dependencies required.
 
 ## How to use it
