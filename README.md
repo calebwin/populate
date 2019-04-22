@@ -5,7 +5,7 @@ populate is a simple JavaScript function for easily populating HTML lists. All y
 To get a good idea of how populate.js works, let's start with a simple list in html
 ```html
 <ul id="list">
-  <!-- Leave this blank so we can dynamically populate it --->
+	<!-- Leave this blank so we can dynamically populate it --->
 </ul>
 ```
 Let say we want to fill our list with some fruits. To call the populate function as shown below we need two paramaters.
@@ -16,9 +16,9 @@ list.populate(fruits, fruitItemStructure);
 Namely an array of our fruits and an array that represents the general structure of each list item. Here's the array of fruits.
 ```js
 var fruits = [
-  { name : "Apple", calories : 95 },
-  { name : "Banana", calories : 105 },
-  { name : "Orange", calories : 45 }
+	{ name : "Apple", calories : 95 },
+	{ name : "Banana", calories : 105 },
+	{ name : "Orange", calories : 45 }
 ];
 ```
 Each element in our array of fruits is an object. Each object represents the data that will be needed for each list item. Next we need an array that represents the general structure of each list item.
@@ -42,13 +42,13 @@ So putting all of that together, here's the full code sample -
 ```js
 var list = document.getElementById("list");
 var fruits = [
-  { name : "Apple", calories : 95 },
-  { name : "Banana", calories : 105 },
-  { name : "Orange", calories : 45 }
+	{ name : "Apple", calories : 95 },
+	{ name : "Banana", calories : 105 },
+	{ name : "Orange", calories : 45 }
 ];
 var tropicalFruits = [
 	{ name : "Pineapple", calories : 452 },
-  { name : "Mango", calories : 201 }
+	{ name : "Mango", calories : 201 }
 ];
 var fruitItemStructure = [
 	{tag:"h3", properties : [{attr : "class", val : "header"}], val : "name"},
