@@ -3,7 +3,7 @@ populate is a simple JavaScript function for easily populating HTML lists. All y
 
 ## How to use it
 To get a good idea of how populate.js works, let's start with a simple list in html
-```js
+```html
 <ul id="list">
   <!-- Leave this blank so we can dynamically populate it --->
 </ul>
